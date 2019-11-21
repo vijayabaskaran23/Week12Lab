@@ -37,3 +37,7 @@ def ScoreFinder(player_names,player_scores,player_to_find):
     else:
         word = 'OUTPUT Player not found'
         print(word)
+def Union(list_1,list_2):
+    new_list = []
+    new_list = list_1 + list_2
+    return new_list
