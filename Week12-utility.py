@@ -26,3 +26,14 @@ def FindWordCount(input_list,input_string):
         if x == input_string:
             count += 1
     return count
+def ScoreFinder(player_names,player_scores,player_to_find):
+    score_index = 0
+    cap = player_to_find.capitalize()
+    #player_to_find = player_to_find.capitalize()
+    if cap in player_names:
+        name_index = player_names.index(cap)
+        score_index = player_scores[name_index]
+        print('OUTPUT',player_to_find, "got a score of",score_index)
+    else:
+        word = 'OUTPUT Player not found'
+        print(word)
