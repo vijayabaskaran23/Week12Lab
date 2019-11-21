@@ -20,3 +20,9 @@ def UpdateString(str_1,str_2,index):
         else:
             new_list.append(str_1[x])
     print ('OUTPUT', ''.join(new_list))
+def FindWordCount(input_list,input_string):
+    count=0
+    for x in input_list:
+        if x == input_string:
+            count += 1
+    return count
