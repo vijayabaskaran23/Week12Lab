@@ -11,3 +11,12 @@ def LoadFile(file):
     mylist = []
     mylist = f.splitlines()
     return mylist
+def UpdateString(str_1,str_2,index):
+    str_1 = list(str_1)
+    new_list = []
+    for x in range(len(str_1)):
+        if x == index:
+            new_list.append(str_2)
+        else:
+            new_list.append(str_1[x])
+    print ('OUTPUT', ''.join(new_list))
