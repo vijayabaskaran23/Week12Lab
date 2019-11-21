@@ -41,3 +41,9 @@ def Union(list_1,list_2):
     new_list = []
     new_list = list_1 + list_2
     return new_list
+def Intersection(list_1,list_2):
+    new_list = []
+    for x in list_1:
+        if x in list_2:
+            new_list.append(x)
+    return new_list
